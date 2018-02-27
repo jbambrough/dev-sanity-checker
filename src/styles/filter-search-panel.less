@@ -1,0 +1,126 @@
+.search-filter-panel {
+  .filters-window-container {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    &.expanded-filters-window-container {
+      position: relative;
+    }
+  }
+
+  .filters-window {
+    background-color: @ch-off-white;
+    box-shadow: 2px 2px 3px @ch-shadow;
+    left: -5px;
+    height: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: absolute;
+    top: 10px;
+
+    &.expanded-filters-window {
+      box-shadow: none;
+      left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+
+    .btn-clear {
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: .05em;
+      line-height: 1.1;
+      position: absolute;
+      right: 15px;
+      text-transform: uppercase;
+      top: 25px;
+    }
+
+    hr {
+      border-top-color: @ch-warm-gray;
+      clear: both;
+      margin: 10px 0;
+    }
+
+    label {
+      display: inline-block;
+    }
+
+    .filters-section-heading {
+      width: 100%;
+    }
+
+    .checklist label {
+      margin: 0;
+      padding: 5px 0 6px;
+
+      a {
+        float: right;
+        margin-left: 5px;
+        width: 180px;
+
+        @media (max-width: @xs-max) {
+          width: 315px;
+        }
+      }
+    }
+
+    .radio-box {
+      float: left;
+      height: 20px;
+      width: 20px;
+
+      .ch-icon {
+        font-size: 12px;
+        right: 3px;
+      }
+    }
+
+    select.input-sm {
+      float: left;
+      margin-bottom: 5px;
+    }
+
+    .radio-box-label {
+      font-weight: normal;
+      margin-left: 5px;
+      max-width: 185px;
+      padding: 3px 5px;
+      text-transform: none;
+      width: 185px;
+
+      @media (max-width: @md-max) {
+        max-width: 150px;
+        width: 150px;
+      }
+
+      @media (max-width: @xs-max) {
+        max-width: 150px;
+        width: 225px;
+      }
+    }
+
+    a.radio-box-label {
+      color: inherit;
+      cursor: default;
+    }
+
+    .ch-icon-star {
+      color: @ch-orange;
+      font-size: 15px;
+      letter-spacing: normal;
+      line-height: 15px;
+      vertical-align: top;
+    }
+
+    .ratings .radio-box {
+      margin-right: 5px;
+    }
+
+    @import "./filter-ratings/search-filter-ratings.less";
+  }
+}

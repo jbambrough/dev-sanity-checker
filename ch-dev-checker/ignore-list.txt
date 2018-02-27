@@ -1,0 +1,11 @@
+filelist.txt
+filelist-tmp.txt
+.vscode/settings.json
+package.json
+ch-dev-checker.sh
+ch-dev-checker/ignore-list.txt
+ch-dev-checker/plugins/angular-component-alpha.sh
+ch-dev-checker/plugins/angular-directive-alpha.sh
+ch-dev-checker/plugins/help.sh
+ch-dev-checker/plugins/scss-alpha.sh
+ch-dev-checker/plugins/less-alpha.sh
